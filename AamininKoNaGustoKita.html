@@ -1,0 +1,20 @@
+<body>
+    <div class="msg-box">
+        <p>
+            https://youtu.be/THYNvEwNntQ 3:29-3:39
+            <img src="emoji.png" style="width: 24px; float: right;">
+        </p>
+    </div>
+    <button id="btn">
+        Send
+    </button>
+    <script>
+        let btn = document.getElementById('btn');
+        let position;
+        btn.addEventListener('mouseover', () => {
+            position = position ? 0 : 100;
+            btn.style.transform = 'translate(' + position + 'px,0px)';
+        });
+    </script>
+</body>
+</html>
